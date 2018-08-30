@@ -19,14 +19,10 @@ body{
     position: absolute;
     left: 40%;
 }
-.rotate_logo{
-        display: block;
-
-}
 
 .rotate_img_right{
-    width: 22%;
-    height: 22%;
+    width: 698px;
+    height: 594px;
     -webkit-animation: spin_r 4s linear infinite;
     -moz-animation: spin_r 4s linear infinite;
     animation: spin_r 4s linear infinite;
@@ -36,9 +32,8 @@ body{
 @keyframes spin_r { 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);}}
 
 .rotate_img_left{
-    width: 24%;
-    height: 24%;
-    margin-left: -170px;
+    width: 698px;
+    height: 594px;
     -webkit-animation: spin_l 4s linear infinite;
     -moz-animation: spin_l 4s linear infinite;
     animation: spin_l 4s linear infinite;
