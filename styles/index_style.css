@@ -19,10 +19,30 @@ body{
     position: absolute;
     left: 40%;
 }
+.rotate_logo{
+        display: block;
 
-.main_img{
-    width: 25%;
-    height: 25%;
-    position: relative;
-    left: 35%;
 }
+
+.rotate_img_right{
+    width: 22%;
+    height: 22%;
+    -webkit-animation: spin_r 4s linear infinite;
+    -moz-animation: spin_r 4s linear infinite;
+    animation: spin_r 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg);}}
+@-webkit-keyframes spin { 100% {-webkit-transform: rotate(360deg);}}
+@keyframes spin_r { 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);}}
+
+.rotate_img_left{
+    width: 24%;
+    height: 24%;
+    margin-left: -170px;
+    -webkit-animation: spin_l 4s linear infinite;
+    -moz-animation: spin_l 4s linear infinite;
+    animation: spin_l 4s linear infinite;
+}
+@-moz-keyframes spin_l { 100% { -moz-transform: rotate(-360deg);}}
+@-webkit-keyframes spin_l { 100% {-webkit-transform: rotate(-360deg);}}
+@keyframes spin_l { 100% {-webkit-transform: rotate(-360deg); transform: rotate(-360deg);}}
