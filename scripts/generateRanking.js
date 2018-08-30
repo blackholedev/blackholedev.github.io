@@ -8,6 +8,10 @@ ranking.on('child_added', function(data) {
   firebase.database().ref('Users/' + uid).once('value').then(function(snapshot) {
      var nome = snapshot.child('Name').val();
      var imgUrl = snapshot.child('PhotoUrl').val();
-     $("#ranking").append("<center><div class='col-md-12 card' style='margin:10px;'><div class='col-md-3'></div><div class='col-md-1'><img src='"+imgUrl+"' class='img-responsive img-rounded' width='96' height='96'></div><div class='col-md-2 paragrafo' style='text-align:center;height: 80px;line-height: 80px;border: 2px dashed #f69c55;'>"+nome+"</div><div class='col-md-1'><p class='paragrafo'>"+record+"<br>"+time+"</p></div><div class='col-md-1'><h1>"+position+"</h1></div><div class='col-md-3'></div></center>");
+     if (position == 1) {
+       $("#ranking").append("<div class='col-md-12' style='padding:16px; margin-bottom:16px;'><center><img src='"+imgUrl+"' class='rounded-circle' style='width:96px; height:96px;'><h1>"+nome+"</h1><h2>"+record+" / "+time+"</h2></center></div>");
+     }else{
+       $("#ranking").append("<div class='col-sm-2'></div><div class='col-sm-2' style='margin-bottom:16px;'><img src='"+imgUrl+"' class='rounded-circle' style='width:96px; height:96px;'></div><div class='col-sm-4'><h1>"+nome+"</h1><h2>"+record+" / "+time+"</h2></div><div class='col-sm-2'><h1>"+position+"</h1></div><div class='col-sm-2'></div>");
+     }
   });
 });
