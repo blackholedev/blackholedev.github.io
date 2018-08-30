@@ -1,0 +1,34 @@
+
+*{
+    color: White;
+}
+
+h1{
+    font-family: GeoSlb712 Md BT, Helvetica;
+}
+
+p{
+    font-family: Gravity, GeoSlb712 Md BT, Helvetica;
+}
+
+a{
+    font-family: Gravity, GeoSlb712 Md BT, Helvetica;
+    text-decoration: none;
+}
+
+body{
+    background-color: Black;
+}
+
+.content{
+    margin-top: 40px;
+    position: absolute;
+    left: 40%;
+}
+
+.main_img{
+    width: 25%;
+    height: 25%;
+    position: relative;
+    /*left: 35%;*/
+}
